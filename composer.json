@@ -1,0 +1,12 @@
+{
+  "name": "web-soldier/wp-post-type-util",
+  "type": "library",
+  "description": "Make post type easy",
+  "keywords": ["wordpress","post-type","utility", "OOP"],
+  "homepage": "https://github.com/nikolays93/wp-post-type-util",
+  "license": "MIT",
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.*",
+    "wp-coding-standards/wpcs": "2.*"
+  }
+}
