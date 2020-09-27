@@ -93,4 +93,28 @@ class Post_Type {
 		$metabox->init( $this->get_slug() );
 		return $this;
 	}
+
+	public function set_archive_redirect( $url = '' ) {
+		add_action(
+			'template_redirect',
+			function() use ( $url ) {
+				if ( is_post_type_archive( $this->get_slug() ) ) {
+					wp_safe_redirect( get_home_url( null, $url ), 301 );
+					exit;
+				}
+			}
+		);
+	}
+
+	public function set_singular_redirect( $url = '' ) {
+		add_action(
+			'template_redirect',
+			function() use ( $url ) {
+				if ( is_singular( $this->get_slug() ) ) {
+					wp_safe_redirect( get_home_url( null, $url ), 301 );
+					exit;
+				}
+			}
+		);
+	}
 }
