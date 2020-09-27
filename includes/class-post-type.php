@@ -75,7 +75,7 @@ class Post_Type {
 					'menu_position'       => 15,
 					'has_archive'         => false,
 					'hierarchical'        => false,
-					'supports'            => array( 'title', 'editor', 'excerpt', 'revisions', 'page-attributes' ),
+					'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'page-attributes' ),
 					'description'         => '',
 				)
 			)
