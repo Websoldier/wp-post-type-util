@@ -71,7 +71,7 @@ class Post_Type {
 					'show_in_menu'        => null,
 					'show_in_admin_bar'   => null,
 					'show_in_nav_menus'   => null,
-					'menu_icon'           => 'dashicons-images-alt2',
+					'menu_icon'           => null,
 					'menu_position'       => 15,
 					'has_archive'         => false,
 					'hierarchical'        => false,
