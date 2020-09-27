@@ -15,7 +15,7 @@ abstract class Abstract_Custom_Fields_Meta_Box {
 	private $args;
 	private $nonce;
 
-	public function __construct( $fields, $arg = array() ) {
+	public function __construct( $fields, $args = array() ) {
 		$this->fields = $fields;
 		$this->args   = wp_parse_args(
 			$args,
