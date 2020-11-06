@@ -8,6 +8,12 @@
  */
 ```
 
+## Установка
+
+Установите зависимости с помощью composer командой `composer require web-soldier/wp-post-type-util` или скачайте проект самостоятельно в папку `./vendor/web-soldier/wp-post-type-util`.
+
+## Как пользоваться
+
 Определите классы _(которые вы хотите использовать)_.
 
 ```php
@@ -17,7 +23,7 @@ use WP_Utility\Custom_Fields_Meta_Box;
 
 Загрузите необходимые файлы _(или подключите автозагрузчик)_
 ```php
-require_once __DIR__ . '/vendor/wp-post-type-util/autoload.php';
+require_once __DIR__ . '/vendor/web-soldier/wp-post-type-util/autoload.php';
 ```
 
 _Теперь вы можете без проблем __зарегистрировать новый тип__:_
