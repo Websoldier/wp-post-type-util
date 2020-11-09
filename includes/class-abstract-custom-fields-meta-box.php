@@ -35,7 +35,7 @@ abstract class Abstract_Custom_Fields_Meta_Box {
 
 		add_action(
 			'add_meta_boxes',
-			function() {
+			function() use ( $post_type ) {
 				add_meta_box(
 					"{$post_type}_advanced_meta",
 					$this->args['title'],
